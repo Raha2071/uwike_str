@@ -1,0 +1,51 @@
+#Options +FollowSymLinks
+
+RewriteEngine On
+# RewriteBase /admin
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Set The form page
+
+
+#-----------------------------------------------#
+# Set Dashboard pages
+#-----------------------------------------------#
+
+RewriteRule ^dashboard(/*)$  app/Views/base.php?request=dashboard
+
+
+#-----------------------------------------------#
+# Set Admins Accounts pages
+#-----------------------------------------------#
+ RewriteRule ^accounts/([A-Za-z]+)/([A-Za-z]+)(/*)$  app/Views/base.php?request=accounts&target=$1&action=$2
+
+ RewriteRule ^accounts/([A-Za-z]+)/([A-Za-z]+)/([0-9]+)(/*)$  app/Views/base.php?request=accounts&target=$1&action=$2&record=$3
+
+#-----------------------------------------------#
+#send All request 
+#-----------------------------------------------#
+RewriteRule ^manipulation_admin(/*)$ app/controller/User.php
+
+
+
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+# ErrorDocument 404 /404
+# ErrorDocument 500 /404
+# IndexIgnore *
+
+<Files ^(*.jpeg|*.jpg|*.png|*.gif|*.pdf)>
+order deny,allow
+deny from all
+</Files>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^sub_directory/(.*)$ /$1 [R=301,NC,L]
+</IfModule>

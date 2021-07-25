@@ -1,0 +1,109 @@
+
+.order-card {
+    color: #fff;
+}
+.bg-c-blue {
+    background: linear-gradient(40deg,#fff,#fff);
+}
+.card-shop {
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+    border: none;
+    margin-bottom: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.card-shop .card-block {
+    padding: 20px;
+}
+.order-card i {
+    font-size: 29px;
+    color: #d40404;
+}
+.order-card span{
+    font-weight: 300;
+    color: #bdbdbd;
+}
+.card-shop h6{
+    color: #2c2c2c;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}
+.admin-detail h4{
+    font-size: 20px !important;
+}
+.admin-detail small{
+    font-size: 15px;
+    font-weight: 200;
+}
+.admin-details-icons a{
+    color: #546e7a;
+    position: relative;
+    padding: 15px 10px;
+}
+.breadcrumbs{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15rem;
+}
+.dash-h4{
+    line-height: 1 !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 5px 18px !important;
+    border-bottom: 1px solid #111;
+}
+th.sorting_asc {
+    
+    font-size: 11px  !important;
+    font-family: 'Poppins', sans-serif;
+}
+td{
+    font-size: 11px  !important;
+    font-family: 'Poppins', sans-serif;
+}
+div#dataTable_info{
+    font-size: 11px  !important;
+    font-family: 'Poppins', sans-serif;
+}
+.card{
+    border-radius: 0  !important;
+}
+.a-details{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)  !important;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 12px  !important;
+    font-weight: 500 !important;
+}
+select.form-control:not([size]):not([multiple]){
+    height: unset  !important;
+}
+table{
+    width: 100%  !important;
+}
+.page-item.active .page-link{
+    background-color: #132b5b !important;
+    border-color: #132b5b !important;
+}
+.active-list{
+    background-color: #b10d0d;
+    
+}
+.active-list a{
+    color: #f5f5f5  !important;
+}
+.active-list a i{
+    color: #f5f5f5  !important;
+}
